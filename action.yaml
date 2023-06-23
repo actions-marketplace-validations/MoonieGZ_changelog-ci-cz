@@ -1,5 +1,5 @@
-name: Changelog CI
-description: Changelog CI is a GitHub Action that generates changelog, then it is committed and/or commented to the release pull request.
+name: Changelog CI CZ
+description: Changelog CI is a GitHub Action that generates changelog, then it is committed and/or commented to the release pull request. Follows conventional commit format.
 author: Maksudul Haque
 branding:
   icon: 'clock'
