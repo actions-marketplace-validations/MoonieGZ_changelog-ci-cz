@@ -105,7 +105,7 @@ class ChangelogCIBase(abc.ABC):
     def _commit_changelog(self, commit_branch_name: str) -> None:
         """Commit Changelog"""
         commit_message = (
-            f"[Changelog CI] Add Changelog for Version {self.release_version}"
+            f"docs(changelog): add changelog for version {self.release_version}"
         )
         git_commit_changelog(
             commit_message,
@@ -118,7 +118,7 @@ class ChangelogCIBase(abc.ABC):
         """Create pull request on GitHub"""
         url = f"{self.GITHUB_API_URL}/repos/{self.action_env.repository}/pulls"
         payload = {
-            "title": f"[Changelog CI] Add Changelog for Version {self.release_version}",
+            "title": f"docs(changelog): add changelog for version {self.release_version}",
             "head": branch_name,
             "base": self.action_env.base_branch,
             "body": body,
