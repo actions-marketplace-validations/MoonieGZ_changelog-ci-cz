@@ -97,11 +97,6 @@ class ChangelogCIBase(abc.ABC):
             f.seek(0, 0)
             f.write(string_data)
 
-            if body:
-                # re-write the existing data
-                f.write("\n\n")
-                f.write(body)
-
     def _commit_changelog(self, commit_branch_name: str) -> None:
         """Commit Changelog"""
         commit_message = (
