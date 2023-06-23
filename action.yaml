@@ -1,5 +1,5 @@
 name: Changelog CI CZ
-description: Changelog CI is a generates changelog, then is committed and/or commented to the release PR. Follows conventional commit format.
+description: Changelog CI generates changelog, commits and/or comments to the release PR. Follows commitizen format.
 author: Maksudul Haque
 branding:
   icon: 'clock'
